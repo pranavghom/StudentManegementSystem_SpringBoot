@@ -119,10 +119,11 @@ public class MyyController {
 		
 	}
 	@PostMapping("/StudentEditSuccess")
-	public String StudentEditSuccess(@RequestPram("sid") int Sid ,Student std ,Model model) {
-		dtdDao.studentEditDao()
-		return "";
-		
+	public String StudentEditSuccess(@RequestParam("sid") int sid ,Student std,Model model) {
+		Student std_edit = stdDao.studentEditDao(sid , std);
+		model.addAttribute("std",std_edit);
+		model.addAttribute("msg", "Save Data sucsessfully ");
+		return "Admin/signupEdit";
 	}
 	
 

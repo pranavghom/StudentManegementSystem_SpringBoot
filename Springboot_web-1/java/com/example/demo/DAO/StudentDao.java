@@ -5,11 +5,10 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import com.example.demo.entites.Student;
 import com.example.demo.repo.StudentRepo;
 
-import ch.qos.logback.core.model.Model;
+
 
 @Repository
 public class StudentDao {
@@ -32,6 +31,17 @@ public class StudentDao {
 		 Student std = repo.findById(sid).get();
 		 return std; 
 		 
+	}
+	
+	
+	public Student studentEditDao(int sid , Student std) {
+	Optional<Student> result = 	repo.findById(sid)         ;
+	if (result.isPresent()) {
+		return repo.save(std);
+	
+	}
+		return null;
+		
 	}
 
 }

@@ -20,12 +20,13 @@ public class Student {
 	String address;
 	String email;
 	String password;
+	String stetus;
 	public Student() {
 		
 	}
 	
 	public Student(int sid, String name, String gender, String dob, String phoneNo, String course, String address,
-			String email, String password) {
+			String email, String password , String stetus) {
 		super();
 		this.sid = sid;
 		this.name = name;
@@ -36,6 +37,14 @@ public class Student {
 		this.address = address;
 		this.email = email;
 		this.password = password;
+	}
+
+	public String getStetus() {
+		return stetus;
+	}
+
+	public void setStetus(String stetus) {
+		this.stetus = stetus;
 	}
 
 	public int getSid() {
@@ -109,6 +118,7 @@ public class Student {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	
 	
 	

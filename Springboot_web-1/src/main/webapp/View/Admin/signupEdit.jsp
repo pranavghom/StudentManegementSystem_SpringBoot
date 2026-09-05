@@ -108,8 +108,15 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" placeholder="Create a secure password" required />
+                <input type="name" value="${std.password}" name="password" placeholder="Create a secure password" required />
             </div>
+                   <div class="form-group">
+                <label>Stetus</label>
+                <select name="Stetus" required>
+                    <option value="pending">Pending</option>  
+                    <option value="accept">Accept</option>
+                     </select>
+</div>
 
             <button type="submit" class="btn-submit">Modify Update</button>
         <br>

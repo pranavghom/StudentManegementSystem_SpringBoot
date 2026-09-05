@@ -16,7 +16,6 @@
         /* Radio button styling */
         .radio-group { display: flex; gap: 15px; margin-top: 5px; }
         .radio-group label { font-weight: normal; cursor: pointer; }
-        
         .btn-submit { width: 100%; padding: 12px; background: #2ecc71; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; margin-top: 10px; }
         .btn-submit:hover { background: #27ae60; }
     </style>
@@ -80,15 +79,24 @@
                 <label>Password</label>
                 <input type="password" name="password" placeholder="Create a secure password" required />
             </div>
-
+            
+               <div class="form-group">
+                <label>Stetus</label>
+                <select name="Stetus" required>
+                    <option value="pending">Pending</option>  
+                    <option value="accept">Accept</option>
+                     </select>
+</div>
             <button type="submit" class="btn-submit">Register</button>
         <br>
         <div>${msg}</div>
        
         </form>
     </div>
-
-    <jsp:include page="common/footer.jsp" />
+    
+	<div>
+ 		<jsp:include page="common/footer.jsp"/>
+</div>
 
 </body>
 </html>

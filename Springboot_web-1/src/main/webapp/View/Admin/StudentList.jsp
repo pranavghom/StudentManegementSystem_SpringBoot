@@ -211,6 +211,7 @@
                        <th>Gender</th>
                        <th>Enrolled Course</th>
                        <th>Password</th>
+                       <th>Stetus</th>
                        <th>Edit</th>
                    </tr>
                </thead>
@@ -224,6 +225,9 @@
                            <td><span class="badge badge-course">${stud.course}</span></td>
                            <td class="password-text">${stud.password}</td>
                            <td><a href="studentEdit?sid=${stud.sid}">Modify</a></td>
+                            <td>${stud.stetus}</td>
+						 
+                           
                        </tr>
                    </c:forEach>
                </tbody>
