@@ -115,7 +115,9 @@ public class MyyController {
 		return "AdminLogin";
 	}
 	@RequestMapping("getStudentHome")
-	public String getStudentHome() {
+	public String getStudentHome(@RequestParam("sid") int sid , Model model) {
+		Student std = stdDao.getStudentDao(sid);
+		model.addAttribute("std" , std);
 		return "Student/StudentHome";
 	}
 	@RequestMapping("studentEdit")
@@ -132,6 +134,18 @@ public class MyyController {
 		model.addAttribute("msg", "Save Data sucsessfully ");
 		return "Admin/signupEdit";
 	}
+	@RequestMapping("MyProfile")
+	public String myProfile(@RequestParam("sid") int sid , Model model) {
+		Student std = stdDao.getStudentDao(sid);
+		model.addAttribute("std" , std);
+		return "Student/MyProfile";
+	}
 	
-
+	@PostMapping("/MyPrifileEditSuccess")
+	public String MyProfileeditSuccess(@RequestParam("sid") int sid ,Student std,Model model) {
+		Student std_edit = stdDao.studentEditDao(sid , std);
+		model.addAttribute("std",std_edit);
+		model.addAttribute("msg", "Save Data sucsessfully ");
+		return "Student/MyProfile";
+	}
 }

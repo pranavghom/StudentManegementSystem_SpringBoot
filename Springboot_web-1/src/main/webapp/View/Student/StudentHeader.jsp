@@ -86,10 +86,10 @@
     
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="/getStudentHome">Home</a>
+            <a class="nav-link" href="/getStudentHome?sid=${std.sid }">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/login">Edit Profile</a>
+            <a class="nav-link" href="/MyProfile?sid=${std.sid }">Edit Profile</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/login">Change Password</a>

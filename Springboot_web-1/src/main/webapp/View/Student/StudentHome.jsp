@@ -307,7 +307,7 @@
                     <h3><i class="fa-solid fa-sliders" style="color: #16a34a;"></i> Quick Actions</h3>
 
                     <div class="action-links">
-                        <a href="editStudentProfile" class="btn-link">
+                        <a href="MyProfile?sid=${std.sid }" class="btn-link">
                             <i class="fa-solid fa-user-pen"></i> Edit Profile
                         </a>
                         <a href="changePassword" class="btn-link">
