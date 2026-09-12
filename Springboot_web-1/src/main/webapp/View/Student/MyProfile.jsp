@@ -46,7 +46,7 @@
                    name="gender"
                    value="male"
                   
-                   ${std.gender == 'Male' ? 'checked' : ''} />
+                   ${std.gender =='male'?'checked':''} />
             Male
         </label>
 
@@ -54,7 +54,7 @@
             <input type="radio"
                    name="gender"
                    value="female"
-                   ${std.gender == 'Female' ? 'checked' : ''} />
+                   ${std.gender=='female'?'checked':''} />
             Female
         </label>
 
@@ -62,7 +62,7 @@
             <input type="radio"
                    name="gender"
                    value="other"
-                   ${std.gender == 'Other' ? 'checked' : ''} />
+                   ${std.gender=='other'?'checked':''} />
             Other
         </label>
 

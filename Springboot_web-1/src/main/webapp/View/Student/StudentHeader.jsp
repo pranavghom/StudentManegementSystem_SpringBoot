@@ -91,8 +91,14 @@
         <li class="nav-item">
             <a class="nav-link" href="/MyProfile?sid=${std.sid }">Edit Profile</a>
         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="EnquiryFrom?sid=${std.sid }">Enquiry</a>
+        </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">My Enquirys</a>
+        </li>
         <li class="nav-item">
-            <a class="nav-link" href="/login">Change Password</a>
+            <a class="nav-link" href="#">Change Password</a>
         </li>
         
         
