@@ -49,8 +49,15 @@ public class MyyController {
 		
 			Student std = stdDao.checkSignIn(email,password);
 			if (std!= null) {
-				model.addAttribute("std",std);
-				return "Student/StudentHome"; 
+				if(std.getStetus().equals("accept")) {
+					model.addAttribute("std",std);
+					return "Student/StudentHome";
+				}
+				else {
+					model.addAttribute("errorMas","Your Stetus is pending");
+					return"login";
+				}
+			 
 			}
 			else {
 				model.addAttribute("errorMas","Invalid Email or Password");

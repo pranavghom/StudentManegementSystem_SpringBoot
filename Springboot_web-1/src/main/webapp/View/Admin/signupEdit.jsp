@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Student Registration</title>
+    <title>Student Registration Admin </title>
     <style>
         html, body { height: 100%; margin: 0; }
         body { display: flex; flex-direction: column; font-family: Arial, sans-serif; background-color: #f8f9fa; }
@@ -25,7 +25,7 @@
 
    
     <div class="form-container">
-        <h2>Student Registration</h2>
+        <h2>Student Registration Edit</h2>
         <form action="/StudentEditSuccess?sid=${std.sid }" method="POST">
             
             <!-- Basic Info -->

@@ -26,7 +26,7 @@ public class Student {
 	}
 	
 	public Student(int sid, String name, String gender, String dob, String phoneNo, String course, String address,
-			String email, String password , String stetus) {
+			String email, String password ,String stetus) {
 		super();
 		this.sid = sid;
 		this.name = name;
@@ -37,6 +37,7 @@ public class Student {
 		this.address = address;
 		this.email = email;
 		this.password = password;
+		this.stetus = stetus;
 	}
 
 	public String getStetus() {

@@ -84,7 +84,7 @@
                 <label>Stetus</label>
                 <select name="Stetus" required>
                     <option value="pending">Pending</option>  
-                    <option value="accept">Accept</option>
+                 
                      </select>
 </div>
             <button type="submit" class="btn-submit">Register</button>

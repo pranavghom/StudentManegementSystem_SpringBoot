@@ -24,7 +24,7 @@
         <h2>Student Login</h2>
         
         <% if (request.getParameter("error") != null) { %>
-            <div style="color: red; text-align: center; margin-bottom: 10px;">Invalid email or password!</div>
+            <div style="color: rgb(255, 0, 128); text-align: center; margin-bottom: 10px;">Invalid email or password!</div>
         <% } %>
 
         <form action="/checkSignIn" method="get">
@@ -40,6 +40,7 @@
             
              <button type="button" class="btn-submit">Register</button>
              <div>${std}</div>
+             <div>${errorMas}</div>
              <div></div>
              
         </form>
