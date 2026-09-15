@@ -26,12 +26,12 @@
      <jsp:include page="StudentHeader.jsp" />
     <div class="form-container">
         <h2>Enquiry From</h2>
-        <form action="" method="POST">
+        <form action="/savaEnqueryData" method="POST">
             
             <!-- Basic Info -->
             <div class="form-group">
                 <label>SID</label>
-                <input type="text" id ="sid"name="sid" value="${std.sid}" disabled/>
+                <input type="text" id ="sid"name="sid" value="${std.sid}" />
             </div>
                  <div class="form-group">
                 <label>Message</label>
@@ -50,7 +50,7 @@
             </div>
             <button type="submit" class="btn-submit">Send</button>
         <br>
-        <div>${msg}</div>
+        <div>${msgg}</div>
         </form>
     </div>
 

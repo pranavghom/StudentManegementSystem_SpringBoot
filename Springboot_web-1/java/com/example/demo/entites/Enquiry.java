@@ -8,13 +8,13 @@ import jakarta.persistence.Id;
 @Entity
 public class Enquiry {
 	@Id
-	@GeneratedValue(strategy =  GenerationType.AUTO)
-	int eid;
+	@GeneratedValue(strategy =  GenerationType.IDENTITY)
+	Integer eid;
 	int sid;
 	String massage;
 	String edate;
 	String remark;
-	public Enquiry(int eid, int sid, String massage, String edate, String remark) {
+	public Enquiry(Integer eid, int sid, String massage, String edate, String remark) {
 		super();
 		this.eid = eid;
 		this.sid = sid;
